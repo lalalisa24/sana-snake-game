@@ -9,7 +9,7 @@
   }
 
   body {
-    background: black;
+    <div style="background-image: url('');">
     display: flex;
     align-items: center;
     justify-content: center;
