@@ -15,7 +15,7 @@
     justify-content: center;
   }
   canvas {
-    border: 1px solid white;
+    border: 5px solid white;
   }
   </style>
 </head>
@@ -42,7 +42,7 @@ var snake = {
   // length of the snake. grows when eating an apple
   maxCells: 4
 };
-var apple = {
+var mango = {
   x: 320,
   y: 320
 };
@@ -93,9 +93,9 @@ function loop() {
     snake.cells.pop();
   }
 
-  // draw apple
-  context.fillStyle = 'red';
-  context.fillRect(apple.x, apple.y, grid-1, grid-1);
+  // draw mango
+  context.fillStyle = 'yellow';
+  context.fillRect(mango.x, mango.y, grid-1, grid-1);
 
   // draw snake one cell at a time
   context.fillStyle = 'green';
@@ -104,7 +104,8 @@ function loop() {
     // drawing 1 px smaller than the grid creates a grid effect in the snake body so you can see how long it is
     context.fillRect(cell.x, cell.y, grid-1, grid-1);  
 
-    // snake ate apple
+    // snake ate mango
+
     if (cell.x === apple.x && cell.y === apple.y) {
       snake.maxCells++;
 
