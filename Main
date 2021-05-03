@@ -9,7 +9,7 @@
   }
 
   body {
-    <div style="background-image: url('image (9).jpeg');">
+    background-color: lightgray
     display: flex;
     align-items: center;
     justify-content: center;
